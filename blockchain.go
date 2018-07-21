@@ -1,5 +1,6 @@
 package main
 
+// Blockchain type
 type Blockchain struct {
 	blocks []*Block
 }
