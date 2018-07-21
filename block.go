@@ -7,11 +7,12 @@ import (
 	"time"
 )
 
+// Block type
 type Block struct {
 	Timestamp     int64
 	Data          []byte
 	PrevBlockHash []byte
-	PrevBlockHash []byte
+	Hash          []byte
 }
 
 // SetHash function to hash the block
