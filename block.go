@@ -24,3 +24,8 @@ func NewBlock(data string, prevBlockHash []byte) *Block {
 
 	return block
 }
+
+// NewGenesisBlock to start the blockchain
+func NewGenesisBlock() *Block {
+	return NewBlock("Genesis Block", []byte{})
+}
