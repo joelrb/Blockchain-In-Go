@@ -12,11 +12,6 @@ func (bc *Blockchain) AddBlock(data string) {
 	bc.blocks = append(bc.blocks, newBlock)
 }
 
-// NewGenesisBlock to start the blockchain
-func NewGenesisBlock() *Block {
-	return NewBlock("Genesis Block", []byte{})
-}
-
 // NewBlockchain function to create the blockchain
 func NewBlockchain() *Blockchain {
 	return &Blockchain{[]*Block{NewGenesisBlock()}}
